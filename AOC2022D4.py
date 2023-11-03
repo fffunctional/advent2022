@@ -16,7 +16,7 @@ def starts_and_ends(match):
 
 def range_contains_range(match):
 	r1_start, r1_end, r2_start, r2_end = starts_and_ends(match)
-	return ((r1_start <= r2_start <= r2_end <=r1_end) or 
+	return ((r1_start <= r2_start <= r2_end <= r1_end) or 
 		    (r2_start <= r1_start <= r1_end <= r2_end))
 
 def ranges_overlap(match):
